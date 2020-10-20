@@ -1,0 +1,13 @@
+footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin-right: 300px;
+	margin-bottom: 10px;
+}
+#data-collect {
+	width: 60%;
+}
+#data-collect th {
+	text-align: center;
+}

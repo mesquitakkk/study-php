@@ -1,0 +1,22 @@
+#estrutura {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin-right: 300px;
+	margin-bottom: 10px;
+}
+h1, h2, h3, p, footer {
+	font-family: Lucida Console;
+	color: #7E7F9A;
+}
+h1, h2, h3, p {
+	text-align: center;
+}
+body {
+	background-color: #272838;
+}

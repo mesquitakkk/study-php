@@ -1,0 +1,59 @@
+#estrutura {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin-right: 300px;
+	margin-bottom: 10px;
+}
+h1, h2, p, footer {
+	font-family: Lucida Console;
+	color: #7E7F9A;
+}
+input {
+	font-family: Lucida Console;
+	background-color: #7E7F9A;
+	color: #272838;
+}
+h1, h2, p {
+	text-align: center;
+}
+body {
+	background-color: #272838;
+}
+#username {
+	text-align: center;
+	width: 30%;
+	margin-left: 35%;
+}
+#submit1 {
+	width: 25%;
+	margin-left: 39%;
+}
+.question {
+	/*border: solid black 1px;*/
+}
+.enunciado {
+	font-size: 20px;
+	color: #7E7F9A;
+}
+.question form input {
+	margin-left: 30px;
+}
+.question form label {
+	font-size: 20px;
+	color: #7E7F9A;
+}
+.nextquestion {
+	margin-left: 5	5%;
+}
+img	{
+	width: 50%;
+	margin-left: 25%;
+	padding: 10px;
+	border: 1px solid #7E7F9A;
+}
