@@ -18,18 +18,22 @@
         }
 
         // query tbpessoa
-        $idpessoa_login = 'idpessoa_login';
-        $sqltbpessoa = "SELECT * FROM tbpessoa WHERE idpessoa='".$rlogin[$idpessoa_login]."';";
+        // $idpessoa_login = 'idpessoa_login';
+        // $sqltbpessoa = "SELECT * FROM tbpessoa WHERE idpessoa='".$rlogin[$idpessoa_login]."';";
 
-        $querypessoa = mysqli_query($conn, $sqltbpessoa);
+        // $querypessoa = mysqli_query($conn, $sqltbpessoa);
         // removendo valores duplos
-        $fetchpessoa = mysqli_fetch_array($querypessoa);
-        foreach($fetchpessoa as $key => $value) {
-            if (!is_numeric($key)){
-                $rpessoa[$key] = $value;
-            }
-        }
-        $_SESSION = $rpessoa;
+        // $fetchpessoa = mysqli_fetch_array($querypessoa);
+        // foreach($fetchpessoa as $key => $value) {
+        //     if (!is_numeric($key) and $key != 'CEP'){
+        //         $rpessoa[$key] = $value;
+        //     }
+        // }
+        // print_r($rpessoa);
+        // $_SESSION = $rpessoa;
+        $_SESSION['idpessoa_login'] = $rlogin['idpessoa_login'];
+        $_SESSION['email'] = $email;
+        $_SESSION['password'] = $password;
         header('location:logged.php');
     } else {
         $_SESSION["ERROR"] = "Usuário ou senha inválidos.";
